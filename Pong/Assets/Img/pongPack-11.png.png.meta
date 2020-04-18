@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 25fbc2d383673e3479a7becb3c58b0f7
+guid: 4ed02951ae126b84bb2c9c3b5c16f61a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7813320436944605303
-    second: pongPack_0
+      213: -5968379780399266810
+    second: pongPack-11.png_0
   - first:
-      213: -1220105525947870558
-    second: pongPack_1
-  - first:
-      213: -5345094776872895404
-    second: pongPack_2
+      213: 8442981677735362241
+    second: pongPack-11.png_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -51,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -107,64 +104,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pongPack_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 986a39a35280d544e8faf1891c9fdc93
-      internalID: 7813320436944605303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pongPack_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f7c0f2162b1b7d468301d0ef8c94d7d
-      internalID: -1220105525947870558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pongPack_2
+      name: pongPack-11.png_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 3, z: 3, w: 3}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04dc35ce86184d346ae853dce8beb5ea
-      internalID: -5345094776872895404
+      spriteID: db47168f865092d429d664025e2dc54d
+      internalID: -5968379780399266810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongPack-11.png_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6d345931dc28e4aaf3e5e5f5f32c46
+      internalID: 8442981677735362241
       vertices: []
       indices: 
       edges: []

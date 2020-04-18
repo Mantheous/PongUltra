@@ -1,19 +1,27 @@
 fileFormatVersion: 2
-guid: b769a8f1d7d54b44fb16f5c3cf0a7167
+guid: d014b4e9e5739d943a9f6a35028bd958
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: New Piskel clone_0
-    21300002: New Piskel clone_1
-    21300004: New Piskel clone_2
-    21300006: New Piskel clone_3
-    21300008: New Piskel clone_4
-    21300010: New Piskel clone_5
-    21300012: New Piskel clone_6
-    21300014: New Piskel clone_7
-    21300016: New Piskel clone_8
-    21300018: New Piskel clone_9
+  internalIDToNameTable:
+  - first:
+      213: 7813320436944605303
+    second: pongPack_0
+  - first:
+      213: -1220105525947870558
+    second: pongPack_1
+  - first:
+      213: -5345094776872895404
+    second: pongPack_2
+  - first:
+      213: -290204523974396815
+    second: pongPack_3
+  - first:
+      213: -4405966176103736173
+    second: pongPack_4
+  - first:
+      213: -5644187587876032536
+    second: pongPack_5
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,7 +76,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -79,7 +87,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -90,96 +99,29 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel clone_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15b20814f902c1a4ba708cc42f2606a0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel clone_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2117196cf9a8c6645bab273d3e7509fd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel clone_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b5453da16b0c594a833594552a5889c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel clone_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e8a17160b3924c4db165506fda75104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel clone_4
+      name: pongPack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,18 +130,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e5953d28b1fc5f4988e120b2e53fa35
+      spriteID: 1f81e7a4681dc56428cc5538fb0e53b0
+      internalID: 7813320436944605303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel clone_5
+      name: pongPack_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 64
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,18 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f7002b96a7f9047bee23f4a8e83980
+      spriteID: a506fe64b4688fc4da2cf1df87bcbb54
+      internalID: -1220105525947870558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel clone_6
+      name: pongPack_2
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,18 +172,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e02a24bd93b0d74ab84d2edc66cbed8
+      spriteID: 40a7911abf8e5704892b755d5a0e9f80
+      internalID: -5345094776872895404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel clone_7
+      name: pongPack_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 32
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -248,18 +193,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 336bff74e94b7d44388fee2975ee81fd
+      spriteID: d54c82092f3f0b646a2696639df08333
+      internalID: -290204523974396815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel clone_8
+      name: pongPack_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -268,18 +214,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 375e0b2c421b0174f815707197998f35
+      spriteID: 7c490fc07e1274d4a941476903bc3ead
+      internalID: -4405966176103736173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel clone_9
+      name: pongPack_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 0
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,7 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c46e71df8586b84da5e51aab19065fa
+      spriteID: 6eb99b801814ed74490993b0c03f9fe0
+      internalID: -5644187587876032536
       vertices: []
       indices: 
       edges: []
@@ -296,11 +244,13 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 59187310dd3e3604ca26b26c4df436f9
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
