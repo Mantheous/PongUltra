@@ -12,6 +12,8 @@ public class BadGuyDie : MonoBehaviour
     public Collider2D LeftHand;
     public GameObject restart;
     public Canvas canvas;
+    public HitText hitText;
+
     private void Start()
     {
         healthBar.SetMaxHealth(MaxHealth);
@@ -24,6 +26,8 @@ public class BadGuyDie : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
+            hitText.HitBad();
+
             if(currentHealth == 0)
             {
                 Die();

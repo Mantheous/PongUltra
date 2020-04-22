@@ -9,6 +9,7 @@ public class paddle : MonoBehaviour
     bool onEdge;
     public float bounceForce;
     public float horizanalEffect;
+    public HitText hitText;
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -40,6 +41,7 @@ public class paddle : MonoBehaviour
         {
             Rigidbody2D ballrb = collision.gameObject.GetComponent<Rigidbody2D>();
             ballrb.AddForce(new Vector2(rb.velocity.x / horizanalEffect, bounceForce) * Time.deltaTime);
+            hitText.HitPaddle();
         }
     }
 
