@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     bool Spawning;
     public GameObject restart;
     public Canvas canvas;
+    public HitText hitText;
     private void Start()
     {
         healthBar.SetMaxHealth(ballLives);
@@ -40,6 +41,7 @@ public class Ball : MonoBehaviour
         {
             Instantiate(restart, transform.position, Quaternion.identity, canvas.transform);
             Destroy(gameObject);
+            hitText.Lose();
         }
         Spawning = false;
     }

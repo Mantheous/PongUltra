@@ -37,6 +37,7 @@ public class BadGuyDie : MonoBehaviour
 
     void Die()
     {
+        hitText.Win();
         springJoint.enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
         LeftHand.enabled = false;

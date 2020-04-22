@@ -25,4 +25,16 @@ public class HitText : MonoBehaviour
         hitsInRow = 0;
         animator.SetBool("Hit", false);
     }
+
+    public void Win()
+    {
+        text.text = "You Win!!!";
+        animator.SetBool("Hit", true);
+    }
+
+    public void Lose()
+    {
+        text.text = "You lose. But You knew that already.";
+        animator.SetBool("Hit", true);
+    }
 }
