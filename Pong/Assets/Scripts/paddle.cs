@@ -10,6 +10,13 @@ public class paddle : MonoBehaviour
     public float bounceForce;
     public float horizanalEffect;
     public HitText hitText;
+    float trueBounceForce;
+
+    private void Start()
+    {
+        trueBounceForce = bounceForce;
+    }
+
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -40,7 +47,7 @@ public class paddle : MonoBehaviour
         if(collision.gameObject.tag == "Ball")
         {
             Rigidbody2D ballrb = collision.gameObject.GetComponent<Rigidbody2D>();
-            ballrb.AddForce(new Vector2(rb.velocity.x / horizanalEffect, bounceForce) * Time.deltaTime);
+            ballrb.AddForce(new Vector2(rb.velocity.x / horizanalEffect, trueBounceForce) * Time.deltaTime);
             hitText.HitPaddle();
         }
     }
@@ -51,5 +58,17 @@ public class paddle : MonoBehaviour
         {
             onEdge = false;
         }
+    }
+
+    public void PowerPaddle()
+    {
+        StartCoroutine(powerUp());
+    }
+
+    IEnumerator powerUp()
+    {
+        trueBounceForce = bounceForce * 10;
+        yield return new WaitForSeconds(20);
+        trueBounceForce = bounceForce;
     }
 }

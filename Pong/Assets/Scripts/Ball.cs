@@ -12,16 +12,26 @@ public class Ball : MonoBehaviour
     public GameObject restart;
     public Canvas canvas;
     public HitText hitText;
+    public bool MainBall;
+
     private void Start()
     {
-        healthBar.SetMaxHealth(ballLives);
+        if(MainBall)
+            healthBar.SetMaxHealth(ballLives);
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Lava" && !Spawning)
+
+        if (collision.gameObject.tag == "Lava" && !Spawning)
         {
-            StartCoroutine(Spawn());
+            if (MainBall)
+                StartCoroutine(Spawn());
+            else
+                Destroy(gameObject);
         }
+
+            
     }
 
     IEnumerator Spawn()
@@ -44,5 +54,11 @@ public class Ball : MonoBehaviour
             hitText.Lose();
         }
         Spawning = false;
+    }
+
+    public void AddHealth()
+    {
+        ballLives++;
+        healthBar.SetHealth(ballLives);
     }
 }

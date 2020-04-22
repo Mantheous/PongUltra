@@ -6,20 +6,34 @@ public class PowerUp : MonoBehaviour
 {
     int behavoir;
     public Animator animator;
+    paddle paddle;
+    Ball ball;
+    public GameObject newBall;
+    GameObject ballObj;
     // Start is called before the first frame update
     void Start()
     {
-        behavoir = Random.Range(1, 2);
+        behavoir = Random.Range(1, 5);
         animator.SetInteger("powerUp", behavoir);
-        transform.position = new Vector3(Random.Range(-40, 40) / 10, 2, 0);
+        paddle = GameObject.FindGameObjectWithTag("Player").GetComponent<paddle>();
+        ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<Ball>();
+        ballObj = GameObject.FindGameObjectWithTag("Ball");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(behavoir == 1)
+        if (collision.gameObject.tag == "Ball")
         {
-
+            if (behavoir == 1)
+                paddle.PowerPaddle();
+            if (behavoir == 2)
+                ball.AddHealth();
+            if (behavoir == 3)
+                Instantiate(newBall, transform.position, Quaternion.identity);
+            if (behavoir == 4)
+                ballObj.GetComponent<Rigidbody2D>().gravityScale = 0.125f;
+            Destroy(gameObject);
         }
     }
+
 }
